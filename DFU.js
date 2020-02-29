@@ -180,7 +180,8 @@ DFU.Device = class {
         this.device_ = device;
         this.settings = settings;
         this.intfNumber = settings["interface"].interfaceNumber;
-        this.dnload = DFU.Device.download;
+        this.dnload = this.download;
+        this.clrStatus = this.clearStatus;
     }
     
     logDebug(msg) {
@@ -478,8 +479,6 @@ DFU.Device = class {
     clearStatus() {
         return this.requestOut(DFU.CLRSTATUS);
     }
-    
-    clrStatus = DFU.Device.clearStatus;
     
     getStatus() {
         return this.requestIn(DFU.GETSTATUS, 6).then(
