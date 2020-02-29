@@ -176,10 +176,6 @@ class DFU {
  * Represents a DFU-enabled connected device.
  */
 DFU.Device = class {
-    device_;
-    settings;
-    intfNumber;
-    
     constructor(device, settings) {
         this.device_ = device;
         this.settings = settings;
