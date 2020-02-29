@@ -1,6 +1,6 @@
 {
   "name": "webdfu",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Utility classes to interract with DFU-enabled devices using WebUSB.",
   "main": "index.js",
   "scripts": {

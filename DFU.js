@@ -180,6 +180,7 @@ DFU.Device = class {
         this.device_ = device;
         this.settings = settings;
         this.intfNumber = settings["interface"].interfaceNumber;
+        this.dnload = DFU.Device.download;
     }
     
     logDebug(msg) {
@@ -469,8 +470,6 @@ DFU.Device = class {
     download(data, blockNum) {
         return this.requestOut(DFU.DNLOAD, data, blockNum);
     }
-    
-    dnload = DFU.Device.download;
     
     upload(length, blockNum) {
         return this.requestIn(DFU.UPLOAD, length, blockNum)
