@@ -1,6 +1,6 @@
 # WebDFU
 
-![NPM](https://img.shields.io/npm/v/webdfu?style=flat-square)
+[![NPM](https://img.shields.io/npm/v/webdfu?style=flat-square)](https://www.npmjs.com/package/webdfu)
 ![Version](https://img.shields.io/github/package-json/v/M4xi1m3/webdfu?color=green&style=flat-square)
 ![License](https://img.shields.io/npm/l/webdfu?color=blue&style=flat-square)
 
